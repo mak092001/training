@@ -1,25 +1,36 @@
-<nav class="w-screen flex justify-between items-center px-32 my-5 max-w-full">
+<nav
+  class="w-screen flex md:justify-between md:items-center items-center justify-evenly items-center my-5 max-w-full relative"
+>
   <div>
-    <img src="/assets/images/So DelishUs Logo.png" />
+    <img class="w-[120px]" src="/assets/images/So DelishUs Logo.png" />
   </div>
-  <div class="flex items-center text-xs">
-    <a class="mr-5 p-1">Home</a>
-    <a class="mr-5 p-1">About Us</a>
-    <a class="mr-5 p-1 relative"
+  <div class="sm:block md:hidden border-2 border-black" (click)="clickedbtn()">
+    <img src="/assets/images/shopping-cart.png" />
+  </div>
+  <div
+    id="myid"
+    class="items-center mt-5 text-xs hidden absolute top-full flex flex-col w-full bg-[#F1E3A0] text-black md:static md:flex-row md:w-fit md:bg-white"
+  >
+    <a class="mr-5 p-1 mt-5 md:mt-0">Home</a>
+    <a class="mr-5 p-1 mt-5 md:mt-0 whitespace-nowrap">About Us</a>
+    <a class="mr-5 p-1 mt-5 md:mt-0 relative"
       >Products
       <div
-        class="absolute bottom-3/4 left-3/4 bg-[#DAB001] text-white px-1"
-        style="font-size: 8px"
+        class="absolute bottom-3/4 left-3/4 bg-[#DAB001] text-white px-1 text-[8px]"
       >
         Hot
       </div>
     </a>
-    <a class="mr-5 p-1">FAQ</a>
-    <a class="mr-5 p-1">Blogs</a>
-    <a class="mr-5 p-1">Contact US</a>
-    <button class="mr-5 bg-[#DAB101] px-8 py-2 rounded-sm text-white">
+    <a class="mr-5 mt-5 md:mt-0">FAQ</a>
+    <a class="mr-5 mt-5 md:mt-0">Blogs</a>
+    <a class="mr-5 mt-5 md:mt-0 whitespace-nowrap">Contact US</a>
+    <button
+      class="mr-5 mt-5 md:mt-0 bg-[#DAB101] px-8 py-2 rounded-sm text-white"
+    >
       Login
     </button>
-    <a class=""><img src="/assets/images/shopping-cart.png" /></a>
+    <a class="pt-5 md:mt-0 mb-5"
+      ><img src="/assets/images/shopping-cart.png"
+    /></a>
   </div>
 </nav>
