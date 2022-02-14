@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  myvar = false;
   clickedbtn() {
-    var a = document.getElementById('myid');
-    a?.style.display == 'none' ? console.log('mak') : console.log('working');
+    this.myvar = !this.myvar;
   }
   constructor() {}
 
